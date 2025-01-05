@@ -25,7 +25,6 @@ func (r *discordMentionRenderer) render(
 		username = r.resolver.ResolveUser(n.(*discordMentionNode).ID)
 	}
 
-	// TODO: Is this vulnerable to XSS?
 	// TODO: Wrap in span & allow customizing class?
 	_, err := w.WriteString(fmt.Sprintf("@%s", username))
 	if err != nil {
