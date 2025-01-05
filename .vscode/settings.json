@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "gopls": {
+        "formatting.local": "pkg.nit.so/goldmark-discord-mentions"
+    }
+}
